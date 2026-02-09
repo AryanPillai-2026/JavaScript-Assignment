@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Login Page</h1>
+    <label>Login: </label>
+    <button id="loginb">Login</button>
+    <h3 id="display"></h3>
+    <script>
+    let count = 0;
+    document.getElementById("loginb").onclick = function login() {
+    count++;
+    document.getElementById("display").innerText = "Attempt " + count;
+}
+</script>    
+</body>
+</html>
