@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Attendance Page</h1>
+    <button id="presentb">Mark Present</button><br><br>
+    <button id="absentb">Mark Absent</button>
+    <p id="p"></p>
+    <p id="a"></p>
+    <script>
+   let present = 0;
+   let absent = 0;
+   document.getElementById("presentb").onclick = function markPresent() {
+    present++;
+    document.getElementById("p").innerText = "Total Present: " + present;
+   }
+   document.getElementById("absentb").onclick = function markAbsent() {
+    absent++;
+    document.getElementById("a").innerText = "Total Absent: " + absent;
+   }
+</script>    
+</body>
+</html>
