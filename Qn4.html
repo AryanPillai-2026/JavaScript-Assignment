@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Power Status Page</h1>
+    <button id="bookb">Book Room</button>
+    <p id="res"></p>
+    <script>
+   let isBooked = false;
+document.getElementById("bookb").onclick = function bookRoom() {
+    if (!isBooked) {
+        isBooked = true;
+        document.getElementById("res").innerText = "Room Booked";
+    } else {
+        document.getElementById("res").innerText = "Already Booked";
+    }
+}
+</script>    
+</body>
+</html>
