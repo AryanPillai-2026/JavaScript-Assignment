@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>Date Object Demo</title>
+</head>
+<body>
+    <h2>JavaScript Date Object Details</h2>
+    <script>
+        var d = new Date();
+        document.write("<b>1. Current Date:</b> " + d.getDate() + "<br>");
+        document.write("<b>2. Current Day (0-6):</b> " + d.getDay() + "<br>");
+        document.write("<b>3. Current Month (0-11):</b> " + d.getMonth() + "<br>");
+        document.write("<b>4. Current Year:</b> " + d.getFullYear() + "<br>");
+        document.write("<b>5. Current Hours:</b> " + d.getHours() + "<br>");
+        document.write("<b>6. Current Minutes:</b> " + d.getMinutes() + "<br>");
+        document.write("<b>7. Current Seconds:</b> " + d.getSeconds() + "<br>");
+        document.write("<b>8. Current Milliseconds:</b> " + d.getMilliseconds() + "<br>");  
+        document.write("<hr>");  
+        document.write("<b>9. toString():</b> " + d.toString() + "<br>");
+        document.write("<b>10. valueOf() (Unix Timestamp):</b> " + d.valueOf() + "<br>");
+        document.write("<b>11. toLocaleString():</b> " + d.toLocaleString() + "<br>");
+    </script>
+</body>
+</html>

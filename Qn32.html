@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <title>String Splitter</title>
+</head>
+<body>
+    <form>
+        Enter a sentence:<br>
+        <input type="text" id="userInput" size="50"><br><br>
+        <input type="button" value="Split" onclick="processString()">
+    </form>
+    <h3>Results:</h3>
+    <textarea id="wordBox" rows="10" cols="30"></textarea>
+    <p id="subResult"></p>
+    <script>
+        function processString() {
+            var input = document.getElementById("userInput").value;
+            var words = input.split(" ");
+            var formattedWords = "";
+            for (var i = 0; i < words.length; i++) {
+                formattedWords += words[i] + "\n";
+            }
+            document.getElementById("wordBox").value = formattedWords;
+            var shortVersion = input.substring(0, 10);
+            document.getElementById("subResult").innerHTML = "First 10 characters: " + shortVersion;
+        }
+    </script>
+</body>
+</html>

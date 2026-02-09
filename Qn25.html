@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title>Manual Array Sort</title>
+</head>
+<body>
+    <h2>Sorted Array Elements</h2>
+    <div id="res"></div>
+    <script>
+        function sort(arr) {
+            let n = arr.length;
+            for (let i = 0; i < n - 1; i++) {
+                for (let j = 0; j < n - i - 1; j++) {
+                    if (arr[j] > arr[j + 1]) {
+                        let temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
+                    }
+                }
+            }
+        }
+        function display(arr) {
+            let output = "Sorted Array: ";
+            for (let i = 0; i < arr.length; i++) {
+                output += arr[i] + (i < arr.length - 1 ? ", " : "");
+            }
+            document.getElementById("res").innerHTML = output;
+        }
+        var a = new Array(10, 30, 20, 50, 40);
+        sort(a);
+        display(a);
+    </script>
+</body>
+</html>

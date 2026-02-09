@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<head>
+    <title>Swap Values</title>
+</head>
+<body>
+    <h2>Swapping values</h2>
+    <form>
+        Box A: <input type="text" id="A"><br><br>
+        Box B: <input type="text" id="B"><br><br>
+        <input type="button" value="Swap Values" 
+               onclick="swap(document.getElementById('A').value, document.getElementById('B').value)">
+    </form>
+    <script>
+        function swap(a, b) {
+            let temp = a;
+            a = b;
+            b = temp;
+
+            alert("Swapped Values:\nA: " + a + "\nB: " + b);
+        }
+    </script>
+</body>
+</html>

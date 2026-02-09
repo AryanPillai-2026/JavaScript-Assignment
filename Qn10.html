@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Multiplication Table</title>
+</head>
+<body>
+
+    <h2>Multiplication Table Generator</h2>
+    <button onclick="gentable()">Generate Table</button>
+    <div id="res"></div>
+
+    <script>
+        function gentable() {
+            const input = prompt("Enter a number to see its multiplication table:");
+            const display = document.getElementById("res");
+            
+            if (input === null || input === "" || isNaN(input)) {
+                display.innerText = "Please enter a valid number.";
+                return;
+            }
+
+            const num = parseInt(input);
+            let i = 1;
+            let result = "<h3>Table of " + num + "</h3>";
+
+            do {
+                result += num + " x " + i + " = " + (num * i) + "<br>";
+                i++;
+            } while (i <= 10);
+
+            display.innerHTML = result;
+        }
+    </script>
+
+</body>
+</html>

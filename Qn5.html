@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h2>Positive, Negative, or Zero?</h2>
+    <label>Enter a number</label><br><br>
+    <input type="number" id="num"><br><br>
+    <button id="submit" onclick="Numbercheck()">Check result</button>
+    <p id="res"></p>
+    <script>
+        function Numbercheck(){
+            const number = document.getElementById("num").value;
+            const display = document.getElementById("res");
+            if (number > 0) {
+                display.innerText = "The number is positive!";
+            } else if (number < 0) {
+                display.innerText = "The number is negative!";
+            } else {
+                display.innerText = "The number is zero!";
+            }
+        }
+    </script>
+</body>
+</html>

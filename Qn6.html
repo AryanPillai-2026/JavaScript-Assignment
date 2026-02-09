@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <title>Student Grading System</title>
+</head>
+<body>
+    <h2>Grade Finder</h2>
+    <button onclick="calcGrade()">Enter Marks</button>
+    <p id="res"></p>
+
+    <script>
+        function calcGrade() {
+            const marks = prompt("Please enter the total marks (0-100):");
+            const display = document.getElementById("res");
+            
+            const score = parseFloat(marks);
+
+            if (score < 0 || score > 100) {
+                display.innerText = "Invalid input.Enter a valid mark.";
+            } else if (score >= 90) {
+                display.innerText = "Grade: S (Outstanding)";
+            } else if (score >= 80) {
+                display.innerText = "Grade: A (Excellent)";
+            } else if (score >= 70) {
+                display.innerText = "Grade: B (Very Good)";
+            } else if (score >= 60) {
+                display.innerText = "Grade: C (Good)";
+            } else if (score >= 50) {
+                display.innerText = "Grade: D (Average)";
+            } else if (score >= 40) {
+                display.innerText = "Grade: E (Pass)";
+            } else {
+                display.innerText = "Grade: U (Unsatisfactory/Fail)";
+            }
+        }
+    </script>
+
+</body>
+</html>

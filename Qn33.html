@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<head>
+    <title>String Markup Methods</title>
+</head>
+<body>
+    <script>
+        var text = "JavaScript";
+        var url = "https://www.google.com";
+
+        document.writeln(text.anchor("top") + "<br>");
+        document.writeln(text.blink() + " (Blink method)<br>");
+        document.writeln(text.fixed() + " (Fixed/Monospace)<br>");
+        document.writeln(text.strike() + " (Strikethrough)<br>");
+        document.writeln("H" + "2".sub() + "O (Subscript)<br>");
+        document.writeln("10" + "2".sup() + " (Superscript)<br>");
+        document.writeln(text.link(url) + " (Clickable Link)<br>");
+    </script>
+</body>
+</html>

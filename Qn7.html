@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Day of the Week</title>
+</head>
+<body>
+
+    <h2>Day Name Finder</h2>
+    <button onclick="DayName()">Enter Day Number</button>
+    <p id="res"></p>
+
+    <script>
+        function DayName() {
+            const input = prompt("Enter a number (0-6):");
+            const display = document.getElementById("res");
+            
+            const num = parseInt(input);
+            let dayName;
+
+            switch (num) {
+                case 0:
+                    dayName = "Sunday";
+                    break;
+                case 1:
+                    dayName = "Monday";
+                    break;
+                case 2:
+                    dayName = "Tuesday";
+                    break;
+                case 3:
+                    dayName = "Wednesday";
+                    break;
+                case 4:
+                    dayName = "Thursday";
+                    break;
+                case 5:
+                    dayName = "Friday";
+                    break;
+                case 6:
+                    dayName = "Saturday";
+                    break;
+                default:
+                    dayName = "Invalid input! Please enter a number between 0 and 6.";
+            }
+
+            display.innerText = dayName;
+        }
+    </script>
+
+</body>
+</html>

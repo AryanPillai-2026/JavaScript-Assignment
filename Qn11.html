@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <title>3x3 Matrix</title>
+</head>
+<body>
+
+    <h2>3x3 Matrix (1-9)</h2>
+    <div id="res" class="matrix"></div>
+
+    <script>
+        const display = document.getElementById("res");
+        let count = 1;
+        let matrixHTML = "";
+
+        for (let i = 0; i < 3; i++) { 
+            for (let j = 0; j < 3; j++) { 
+                matrixHTML += count + "  ";
+                count++;
+            }
+            matrixHTML += "<br>"; 
+        }
+
+        display.innerHTML = matrixHTML;
+    </script>
+
+</body>
+</html>

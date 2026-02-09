@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<head>
+    <title>Direct Array Initialization</title>
+</head>
+<body>
+    <h2>Array Elements</h2>
+    <div id="res"></div>
+    <script>
+        var b = new Array(11, 12, 13, 14, 15);
+        var output = "";
+        for (var i = 0; i < b.length; i++) {
+            output += "Index " + i + " contains: " + b[i] + "<br>";
+        }
+        document.getElementById("res").innerHTML = output;
+    </script>
+</body>
+</html>
