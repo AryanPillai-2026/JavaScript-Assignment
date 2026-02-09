@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Power Status Page</h1>
+    <h3>STATUS: <span id="s">OFF</span></h3>
+    <button id="onb">ON</button><br><br>
+    <button id="offb">OFF</button>
+    <script>
+   let status = "";
+   document.getElementById("onb").onclick = function powerOn() {
+    status = "ON";
+    document.getElementById("s").innerText = status;
+   }
+   document.getElementById("offb").onclick = function powerOff() {
+    status = "OFF";
+    document.getElementById("s").innerText = status;
+   }
+</script>    
+</body>
+</html>
